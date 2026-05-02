@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le Petit Musée du Savon — Savonnerie artisanale Aix</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',system-ui,sans-serif;color:#2d2926;background:#faf8f5;line-height:1.65}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:28px 48px;border-bottom:1px solid #e8e2db}
+.nav-links a{margin-left:32px;text-decoration:none;color:#5c5348;font-size:14px;letter-spacing:.3px;text-transform:uppercase}
+.logo{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600;color:#2d2926}
+.hero{display:grid;grid-template-columns:1fr 1fr;min-height:85vh;align-items:center}
+.hero-text{padding:0 80px 0 48px}
+.hero-text h1{font-family:'Cormorant Garamond',serif;font-size:clamp(44px,5.5vw,72px);line-height:1.05;font-weight:400;margin-bottom:24px}
+.hero-text p{font-size:16px;color:#6b6156;max-width:380px;margin-bottom:36px;line-height:1.7}
+.hero-text .btn{display:inline-block;padding:14px 36px;border:1px solid #2d2926;color:#2d2926;text-decoration:none;font-size:13px;letter-spacing:1px;text-transform:uppercase;transition:.2s}
+.hero-text .btn:hover{background:#2d2926;color:#faf8f5}
+.hero-right{background:#e8e2db;position:relative}
+.hero-right::after{content:"";position:absolute;inset:40px;border:1px solid rgba(45,41,38,.12)}
+.about{display:grid;grid-template-columns:1fr 1fr;padding:120px 48px;gap:80px;align-items:center;border-top:1px solid #e8e2db}
+.about h2{font-family:'Cormorant Garamond',serif;font-size:38px;font-weight:400;margin-bottom:20px}
+.about p{color:#6b6156;font-size:15px;line-height:1.8}
+.about-img{background:#d4ccc1;height:420px;position:relative}
+.about-img::after{content:"";position:absolute;inset:24px;border:1px solid rgba(255,255,255,.3)}
+.products{padding:100px 48px;border-top:1px solid #e8e2db}
+.products h2{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:400;text-align:center;margin-bottom:60px}
+.prod-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:32px}
+.prod{border-top:1px solid #e8e2db;padding-top:20px}
+.prod h3{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:400;margin-bottom:8px}
+.prod p{font-size:13px;color:#6b6156;line-height:1.6}
+.prod .price{font-size:13px;color:#2d2926;margin-top:12px;letter-spacing:.5px}
+.workshops{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #e8e2db}
+.workshops-text{padding:100px 48px;display:flex;flex-direction:column;justify-content:center}
+.workshops-text h2{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:400;margin-bottom:16px}
+.workshops-text p{color:#6b6156;font-size:15px;line-height:1.8;margin-bottom:12px}
+.workshops-img{background:#c5b9ab;min-height:400px}
+.contact{padding:80px 48px;text-align:center;border-top:1px solid #e8e2db}
+.contact h2{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:400;margin-bottom:8px}
+.contact p{font-size:14px;color:#6b6156;margin-bottom:4px}
+.footer{text-align:center;padding:32px;font-size:12px;color:#9a9085;border-top:1px solid #e8e2db}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.hero-text{padding:60px 24px}.about{grid-template-columns:1fr;padding:60px 24px;gap:40px}.prod-grid{grid-template-columns:1fr 1fr}.workshops{grid-template-columns:1fr}}
+@media(max-width:600px){.prod-grid{grid-template-columns:1fr}}
+</style></head>
+<body>
+<nav class="nav"><div class="logo">Le Petit Musée du Savon</div><div class="nav-links"><a href="#savons">Savons</a><a href="#ateliers">Ateliers</a><a href="#contact">Contact</a></div></nav>
+<section class="hero"><div class="hero-text"><h1>Le savon comme on ne le fait plus.</h1><p>Fabrication artisanale à froid, à Aix-en-Provence. Huiles végétales, parfums naturels, pas de sulfate ni de palme.</p><a href="#savons" class="btn">Découvrir</a></div><div class="hero-right"></div></section>
+<section class="about" id="savons"><div class="about-text"><h2>Fait à la main, avec du temps.</h2><p>Chaque savon passe 6 semaines de maturation avant d'être vendu. Nous utilisons l'huile d'olive de la vallée des Baux, du beurre de karité bio, et des huiles essentielles distillées à Grasse. Pas de colorant synthétique, pas de parfum de synthèse. Juste des ingrédients qu'on pourrait manger — mais qui nettoient mieux.</p></div><div class="about-img"></div></section>
+<section class="products"><h2>La collection</h2><div class="prod-grid">
+<div class="prod"><h3>Marseille Tradition</h3><p>À l'huile d'olive, sans parfum. Pour les peaux sensibles et les puristes.</p><div class="price">6,50 €</div></div>
+<div class="prod"><h3>Lavande Fine</h3><p>Huile essentielle de lavande vraie des Alpilles. L'odeur du Sud en barre.</p><div class="price">7,50 €</div></div>
+<div class="prod"><h3>Pamplemousse Romarin</h3><p>Tonifiant et frais. Parfait pour le matin sous la douche.</p><div class="price">7,50 €</div></div>
+<div class="prod"><h3>Miel & Avoine</h3><p>Exfoliant doux, nourrissant. Miel de Provence et flocons d'avoine bio.</p><div class="price">8,00 €</div></div>
+</div></section>
+<section class="workshops" id="ateliers"><div class="workshops-img"></div><div class="workshops-text"><h2>Ateliers de fabrication</h2><p>Venez fabriquer votre propre savon dans notre atelier du centre-ville. 2 heures, 6 participants maximum, tout le matériel fourni.</p><p>Prochaines dates : 15 mai, 22 mai, 5 juin. Réservation obligatoire.</p><p style="margin-top:12px;font-size:13px;color:#2d2926"><strong>45 € par personne — inclut 4 savons à emporter.</strong></p></div></section>
+<section class="contact" id="contact"><h2>Le Musée du Savon</h2><p>18 Rue Espariat, 13100 Aix-en-Provence</p><p>contact@petitmuseesavon.fr — 04 42 38 45 12</p><p>Mar–Sam : 10h–13h / 14h–19h</p></section>
+<div class="footer">© Le Petit Musée du Savon — Aix-en-Provence</div>
+</body></html>
